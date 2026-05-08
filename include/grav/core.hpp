@@ -14,6 +14,13 @@ namespace grav
         Vec3();
         Vec3(const grav::real, const grav::real y, const grav::real z);
         void invert();
+        grav::real magnitude() const;
+        grav::real squareMagnitude() const;
+        void normalize();
+
+        void operator*=(const real& x);
+        Vec3 operator*(const real& x) const;
+    
     };
 }
 
