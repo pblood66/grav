@@ -1,5 +1,5 @@
 #include "grav/core.hpp"
-#include "core.hpp"
+#include "grav/core.hpp"
 
 namespace grav
 {
@@ -7,7 +7,7 @@ namespace grav
     {
     }
 
-    Vec3::Vec3(const real, const real y, const real z) : x(x), y(y), z(z)
+    Vec3::Vec3(const real m_x, const real m_y, const real m_z) : x(m_x), y(m_y), z(m_z)
     {
     }
 

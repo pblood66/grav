@@ -1,10 +1,5 @@
-cmake_minimum_required(VERSION 3.10.0)
+cmake_minimum_required(VERSION 3.16)
 
-project(grav VERSION 0.1.0 LANGUAGES CXX)
+project(grav LANGUAGES CXX)
 
-add_executable(grav
-    src/main.cpp
-    src/engine/core.cpp
-)
-
-target_include_directories(grav PRIVATE include)
+add_subdirectory(engine)
